@@ -8,25 +8,27 @@ import Categories from './pages/Categories';
 import Deals from './pages/Deals';
 import CategoryPage from './pages/CategoryPage';
 import SearchResults from './pages/SearchResults';
-import Home from './pages/Home';  // Import Home here
+import Home from './pages/Home';
 
-import products from './data/products'; // Assuming you have products data
+import products from './data/products';
 
 const App = () => {
   return (
     <Router>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home products={products} />} />  {/* Pass products prop */}
-          <Route path="/search" element={<SearchResults products={products} />} />
-          <Route path="/product/:productId" element={<ProductDetails products={products} />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/category/:category" element={<CategoryPage products={products} />} />
-          <Route path="/deals" element={<Deals products={products} />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home products={products} />} />
+            <Route path="/search" element={<SearchResults products={products} />} />
+            <Route path="/product/:productId" element={<ProductDetails products={products} />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/category/:category" element={<CategoryPage products={products} />} />
+            <Route path="/deals" element={<Deals products={products} />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 };
