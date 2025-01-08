@@ -1,11 +1,10 @@
-// src/pages/Home.js
 import React, { useState } from 'react';
 import ProductList from '../components/ProductList';
 import ScrollableBanner from '../components/ScrollableBanner';
 
 const Home = ({ products }) => {
   const [category, setCategory] = useState('');
-  
+
   // Filter products by category
   const filteredProducts = category
     ? products.filter(product => product.category === category)
@@ -19,14 +18,17 @@ const Home = ({ products }) => {
       {/* Scrollable Banner */}
       <ScrollableBanner />
 
-      <h2 className="text-2xl font-semibold mt-6 mb-4">Featured Products</h2>
+      {/* Title */}
+      <h2 className="text-2xl font-semibold mt-6 mb-4 text-gray-800 dark:text-gray-100">
+        Featured Products
+      </h2>
 
       {/* Category Filter */}
       <div className="mb-4">
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="border border-gray-300 rounded p-2"
+          className="border border-gray-300 dark:border-gray-700 rounded p-2 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100"
         >
           <option value="">All Categories</option>
           {categories.map((category) => (
