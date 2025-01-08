@@ -38,6 +38,11 @@ const Header = () => {
           {/* <Link to="/deals" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white mx-2">
             Deals
           </Link> */}
+
+<Link to="/contact" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 mx-2">
+            Contact Us
+          </Link>
+          
           {/* Dark Mode Toggle */}
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}

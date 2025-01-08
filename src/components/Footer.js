@@ -8,7 +8,7 @@ const Footer = () => {
   const categories = Array.from(new Set(products.map((product) => product.category))).sort();
 
   return (
-    <footer className="bg-gray-800 text-gray-200 mt-auto">
+    <footer className="bg-gray-800 text-gray-200 mt-auto shadow-sm shadow-white">
       <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           

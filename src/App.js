@@ -9,6 +9,7 @@ import Deals from './pages/Deals';
 import CategoryPage from './pages/CategoryPage';
 import SearchResults from './pages/SearchResults';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 import products from './data/products';
 
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/categories" element={<Categories />} />
             <Route path="/category/:category" element={<CategoryPage products={products} />} />
             <Route path="/deals" element={<Deals products={products} />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
