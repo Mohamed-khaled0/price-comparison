@@ -10,7 +10,8 @@ import CategoryPage from './pages/CategoryPage';
 import SearchResults from './pages/SearchResults';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 import products from './data/products';
 
 const App = () => {
@@ -27,6 +28,8 @@ const App = () => {
             <Route path="/category/:category" element={<CategoryPage products={products} />} />
             <Route path="/deals" element={<Deals products={products} />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
           </Routes>
         </main>
         <Footer />

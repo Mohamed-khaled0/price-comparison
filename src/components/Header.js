@@ -32,14 +32,21 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="flex items-center">
+                      {/* Login and Register Links */}
+
+        <Link to="/login" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white mx-2">
+            Login
+          </Link>
+          <Link to="/register" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white mx-2">
+            Register
+          </Link>
           <Link to="/categories" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white mx-2">
             Categories
           </Link>
-          {/* <Link to="/deals" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white mx-2">
-            Deals
-          </Link> */}
 
-<Link to="/contact" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 mx-2">
+
+          
+          <Link to="/contact" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 mx-2">
             Contact Us
           </Link>
           

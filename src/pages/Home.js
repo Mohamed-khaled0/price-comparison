@@ -8,7 +8,7 @@ const Home = ({ products }) => {
   // Filter products by category
   const filteredProducts = category
     ? products.filter(product => product.category === category)
-    : products.slice(0, 20); // Get first 20 products if no category filter
+    : products.slice(0, 30); // Get first 20 products if no category filter
 
   // Get unique categories from products
   const categories = [...new Set(products.map(product => product.category))];
