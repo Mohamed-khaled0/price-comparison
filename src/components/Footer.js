@@ -14,9 +14,9 @@ const Footer = () => {
           
           {/* About Us Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">About PriceCompare</h3>
+            <h3 className="text-xl font-semibold mb-4">About PriceTracker</h3>
             <p className="text-gray-400">
-              PriceCompare helps you find the best prices across various online retailers. Compare products effortlessly and save money on your favorite items.
+              PriceTracker helps you find the best prices across various online retailers. Compare products effortlessly and save money on your favorite items.
             </p>
           </div>
           
@@ -87,7 +87,7 @@ const Footer = () => {
 
         {/* Divider */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center">
-          &copy; {new Date().getFullYear()} PriceCompare. All rights reserved.
+          &copy; {new Date().getFullYear()} PriceTracker. All rights reserved.
         </div>
 
         {/* Social Media Links */}
