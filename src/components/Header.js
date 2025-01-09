@@ -24,7 +24,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold text-gray-800 dark:text-gray-100">
-          PriceCompare
+          PriceTracker
         </Link>
 
         {/* Search Bar */}

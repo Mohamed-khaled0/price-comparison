@@ -20,7 +20,7 @@ const ProductDetails = ({ products }) => {
             {product.offers.map((offer) => (
               <div key={offer.retailer} className="my-2">
                 <p className="font-semibold">{offer.retailer}</p>
-                <a href={offer.url} target="_blank" className="text-blue-500">
+                <a href={offer.url} target="_blank" rel="noreferrer" className="text-blue-500">
                   Buy here
                 </a>
                 <p className="text-gray-600">Price: ${offer.price}</p>
